@@ -42,4 +42,4 @@ could break something?
 
 Now that you have your workspace set up, what do you want to try using Git for?
 
-    I want to use Git for my upcoming Udacity projects.
+    I want to use Git for my upcoming Udacity projects.  

@@ -4,6 +4,8 @@ history in a single place, which makes it easier for us to come back to a previo
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
+A staging area is different from the working directory and the repository because it temporarily stores the files rather than permanently storing them 
+and it helps the user can decide which files they want to commit by first placing them in the staging area.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
