@@ -9,14 +9,32 @@ and it helps the user can decide which files they want to commit by first placin
 
 How can you use the staging area to make sure you have one commit per logical
 change?
-
+ First add files that are related to the first logical change you want to commit, and after making it sure you have staged all the files, make a commit.
+ Next you stage other files that are related to the second logical change you want to commit, and so on.
+ 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+ When you want to try adding an experimental feature while keeping your software working without breaking.
+To do so, keep your master branch clean of any untested changes, instead make an experimental branch for any new 
+feature that needs experimenting. After the new functionality gets stable enough to go into the master branch, you could merge 
+the experimental branch into the master.
 
 How do the diagrams help you visualize the branch structure?
+While using git log --graph (possibly with --oneline) [branch names...], we can easily see how the whole branch structure was 
+developed and at which point each branch was actually created. That would give us the overview of the whole structure of the project
+that we are working on, so that we can tell what we are specifically focusing on and when and which branch to merge with our work.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+Merging two branches incorporates the changes from two branches into a new commit. This allows users to create new features or work 
+independently of one another and then combine their efforts into a working version. It is represented in the diagram as two branches
+ coming together because that is effectively what is happening.
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+Pros:
+* Saves time, especially when each non-conflicting merge is trivial.
+* Helps us concentrate on the changes which actually contain conflicts.
+
+Cons:
+* Maybe can make it easier to overlook the situation where two people are working on the same file at the same time.
